@@ -1,10 +1,13 @@
 import Hero from '@/components/page-sections/home/Hero'
 import Items from '@/components/page-sections/home/items'
+import store from '@/reduc/store'
 import Head from 'next/head'
 import React from 'react'
+import { Provider } from 'react-redux'
 
 function index() {
   return (
+    <Provider store={store}>
     <>
       < Head>
         <title>TechCommerce</title>
@@ -21,6 +24,7 @@ function index() {
         
       </main>
     </>
+    </Provider>
   )
 }
 
