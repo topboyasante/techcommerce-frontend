@@ -15,6 +15,8 @@ function index() {
       <main>
         <Hero/>
 
+
+
         <Items/>
         
       </main>

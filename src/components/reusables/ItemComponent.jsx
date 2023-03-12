@@ -10,10 +10,10 @@ export default function ItemComponent({name,img,price}) {
     }
   return (
     
-          <div className="bord w-full  h-[300px] md:h-[350px] " >
+          <div className=" w-full  h-[300px] md:h-[350px] bg-[#f5f5f6] " >
         <CardContent>
           <div className="abosolute">
-            <img src={`../images2/${img}`} className=" w-full h-[200px] md:h-[250px] object-cover rounded-[3em]" alt={name}/>
+            <img src={`../images2/${img}`} className=" w-full h-[200px] md:h-[250px] object-cover rounded-[1em]" alt={name}/>
         
           </div>
  
