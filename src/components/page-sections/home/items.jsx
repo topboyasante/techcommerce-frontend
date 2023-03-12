@@ -14,7 +14,9 @@ export default function Items() {
 
 
   return (
-    <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4 px-3 items-center'>
+
+
+    <div className='bord grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  pt-4 px-6 py-[2em] items-center'>
         {details}
 
 

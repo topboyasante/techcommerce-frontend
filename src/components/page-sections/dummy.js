@@ -3,10 +3,10 @@ export default
 
      [
         {
-          name: "Super Ear Plugs",
+          name: "MacBook Pro",
           description: "This is the first object",
-          price: 200,
-          img:'ear2.jpg'
+          price: 2200,
+          img:'macbookpro.jpg'
         },
         {
           name: "Airpods 2",
@@ -27,23 +27,23 @@ export default
           img:'earbuds.jpg'
         },
         {
-          name: "JBL Headphones ",
+          name:"Sony Superstar "  ,
           description: "This is the fifth object",
           price: 580,
-          img:'head2.jpg'
+          img:'sonypex.jpg'
         },
         {
-          name: "Sony Superstar ",
+          name: "JBL Headphones ",
           description: "This is the sixth object",
           price: 800,
           img:'headphone.jpg'
           
         },
         {
-          name: "Hunter Pro Headset ",
+          name: "Amazon Alexa ",
           description: "This is the seventh object",
           price: 1000,
-          img:'hunter.jpeg'
+          img:'alexa.jpg'
 
         },
         {
@@ -65,10 +65,10 @@ export default
           img:'onurbinay.jpg'
         },
         {
-          name: "Sony Rainbow Headphones",
+          name: "",
           description: "This is the eleventh object",
           price: 1400,
-          img:'rain.jpeg'
+          img:'someheadphones.jpg'
         },
         {
           name: "Series 6",
@@ -86,12 +86,19 @@ export default
           name: "VR Headset",
           description: "This is the fourteenth object",
           price:2908,
-          img:'vrheadset.jpg'
+          img:'vrheadset3.jpg'
         },
         {
           name: "Airpods Max",
           description: "This is the fifteenth object",
           price: 3209,
-          img:'airpodsmax.jpg'
+          img:'airpodsmx.jpg'
+        },
+
+        {
+          name: "Logilink mouse",
+          description: "This is the fifteenth object",
+          price: 3209,
+          img:'logilink.jpg'
         }
       ];
