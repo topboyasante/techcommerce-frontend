@@ -21,7 +21,7 @@ function Navbar() {
     },
   ]
   return (
-    <nav className='p-5 fixed w-full gap-3 lg:gap-0 lg:h-[10vh] bg-white flex flex-col lg:flex-row justify-center lg:justify-between items-center border'>
+    <nav className='shadow p-5 fixed  w-full gap-3 lg:gap-0 lg:h-[10vh] bg-white flex flex-col lg:flex-row justify-center lg:justify-between items-center border'>
       {/* Logo */}
       <section className='lg:w-[20%]'>
         <p className='text-2xl font-bold'><span className='text-green-600'>tech</span>commerce</p>
