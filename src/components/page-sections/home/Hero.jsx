@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import HeroImg from '../../images/patternpad.svg'
+import data from '../dummy.js'
 
 function Hero() {
+
+  console.log(data)
   return (
     <main className='w-full lg:h-[40vh] pt-[20vh] lg:pt-[10vh]'>
         <section className='max-w-[1600px] mx-auto h-full rounded flex flex-col md:flex-row justify-between items-center'>

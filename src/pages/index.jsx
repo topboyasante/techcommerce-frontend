@@ -1,4 +1,5 @@
 import Hero from '@/components/page-sections/home/Hero'
+import Items from '@/components/page-sections/home/items'
 import Head from 'next/head'
 import React from 'react'
 
@@ -13,6 +14,9 @@ function index() {
       </Head>
       <main>
         <Hero/>
+
+        <Items/>
+        
       </main>
     </>
   )

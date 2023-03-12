@@ -89,8 +89,9 @@ export default
           img:'vrheadset.jpg'
         },
         {
-          name: "Object 15",
+          name: "Airpods Max",
           description: "This is the fifteenth object",
-          price: 380
+          price: 3209,
+          img:'airpodsmax.jpg'
         }
       ];
