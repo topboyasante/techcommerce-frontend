@@ -13,7 +13,7 @@ reducers:{
     Add(state,action){
         const newitem = action.payload;
         //check if item exist
-        const existingitem= state.itemList.find((item)=> item.id=== newitem.id);
+        const existingitem= state.Itemslist.find((item)=> item.id=== newitem.id);
         if(existingitem){
             existingitem.quantity++;
             existingitem.totalprice+= newitem.price;
@@ -21,7 +21,7 @@ reducers:{
         }
         else{
             //creating new item
-            state.ItemList.push(
+            state.Itemslist.push(
                 {
                     id:newitem.id,
                     price:newitem.price,
@@ -48,11 +48,11 @@ reducers:{
             
         const id= action.payload;
         //finding the item with id === id
-        const existingitem = state.itemList.find((item)=> id === item.id);
+        const existingitem = state.Itemslist.find((item)=> id === item.id);
         //clearing item from cart if quantity === 1
         if(existingitem.quantity=== 1){
-            state.itemList = state.itemList.filter((item)=> item.id !== id);
-            state.totalQuantity--
+            state.Itemslist = state.Itemslist.filter((item)=> item.id !== id);
+            state.TotalQuantity--
         }
         //reducing the item quantity
         else{

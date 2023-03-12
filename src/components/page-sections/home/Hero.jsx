@@ -7,7 +7,7 @@ function Hero() {
 
 
   return (
-    <main className='  w-full lg:h-[40vh] pt-[14rem] bg-[#f3f4f4] md:pt-[17vh] lg:pt-[10vh]'>
+    <main className='  w-full lg:h-[40vh] pt-[14rem] bg-[#f3f4f4] md:pt-[17vh] lg:pt-[10vh] font-[Roboto]'>
         <section className='max-w-[1600px] mx-auto h-full rounded flex flex-col md:flex-row justify-between items-center'>
                 <section className='p-5 lg
                 :w-[40%] flex flex-col justify-center h-full place-items-center gap-3'>

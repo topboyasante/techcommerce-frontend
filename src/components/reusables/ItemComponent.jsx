@@ -1,11 +1,15 @@
 import React from 'react'
 import CardContent from "@mui/material/CardContent";
 import { FaShoppingBag} from 'react-icons/fa';
+import { useDispatch } from 'react-redux';
+import { cartActions } from '@/reduc/Cart';
 
 
-export default function ItemComponent({name,img,price}) {
+export default function ItemComponent({name,img,price,id}) {
+const dispatch = useDispatch();
 
     function addhandler(){
+        dispatch(cartActions.Add({id,name,img,price}))
 
     }
   return (

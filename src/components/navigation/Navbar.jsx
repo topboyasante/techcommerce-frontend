@@ -4,8 +4,16 @@ import SearchBar from '../reusables/SearchBar'
 
 import {AiOutlineUser} from 'react-icons/ai'
 import {BsCart2} from 'react-icons/bs'
+import CustomizedBadges from '../reusables/cartlogo'
+
 
 function Navbar() {
+ // {<BsCart2 size={30}/>}
+
+
+
+ 
+
   const shopLinks =[
     {
       id:0,
@@ -20,6 +28,12 @@ function Navbar() {
       name:'Help'
     },
   ]
+
+
+
+
+
+  
   return (
     <nav className='shadow p-5 fixed  w-full gap-3 lg:gap-0 lg:h-[10vh] bg-white flex flex-col lg:flex-row justify-center lg:justify-between items-center border'>
       {/* Logo */}
@@ -50,7 +64,9 @@ function Navbar() {
             <p>Account</p>
          </div>
          <div className='flex items-center gap-3'>
-            <BsCart2 size={30}/>
+          <CustomizedBadges/>
+        
+            
             <p>Cart</p>
          </div>
       </section>
