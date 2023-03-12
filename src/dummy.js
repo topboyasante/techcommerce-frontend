@@ -33,7 +33,7 @@ export default
           img:'head2.jpg'
         },
         {
-          name: "Sony Superstar Head Phones",
+          name: "Sony Superstar ",
           description: "This is the sixth object",
           price: 800,
           img:'headphone.jpg'
@@ -59,29 +59,34 @@ export default
           img:'ipadair.jpg'
         },
         {
-          name: "Object 10",
+          name: "Onur Binary",
           description: "This is the tenth object",
-          price: 980
+          price: 980,
+          img:'onurbinay.jpg'
         },
         {
-          name: "Object 11",
+          name: "Sony Rainbow Headphones",
           description: "This is the eleventh object",
-          price: 1400
+          price: 1400,
+          img:'rain.jpeg'
         },
         {
-          name: "Object 12",
+          name: "Series 6",
           description: "This is the twelfth object",
-          price: 657
+          price: 657,
+          img:'series3.jpg'
         },
         {
-          name: "Object 13",
+          name: "Series 7",
           description: "This is the thirteenth object",
-          price: 929
+          price: 929,
+          img:'series4.jpg'
         },
         {
-          name: "Object 14",
+          name: "VR Headset",
           description: "This is the fourteenth object",
-          price:2908
+          price:2908,
+          img:'vrheadset.jpg'
         },
         {
           name: "Object 15",
