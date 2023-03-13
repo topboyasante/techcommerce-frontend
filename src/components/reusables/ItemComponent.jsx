@@ -21,8 +21,8 @@ export default function ItemComponent({name,img,price}) {
   
 <div className=" pt-[1em] flex justify-between">
   <div>
-          <div className=" text-xl ite font-medium font-[Oswald]">{name}</div>
-          < div className="font-[Roboto]">GHc {price}</div>
+          <div className=" text-xl ite font-medium  uppercase tracking-widest">{name}</div>
+          < div className="">GHc {price}</div>
           </div>
           
           <button onClick={addhandler}>
