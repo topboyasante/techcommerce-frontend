@@ -25,26 +25,15 @@ const dispatch = useDispatch();
   
 <div className=" pt-[1em] flex justify-between">
   <div>
-          <div className=" text-xl ite font-medium  uppercase tracking-widest">{name}</div>
-          < div className="">GHc {price}</div>
+          <div className=" lg:text-xl font-medium  uppercase tracking-widest">{name}</div>
+            <div className="">GHc {price}</div>
           </div>
-          
           <button onClick={addhandler}>
             <FaShoppingBag size={22}/>
-            
           </button>
-
-
-
           </div>
-        </CardContent>
-
+          </CardContent>
         <div>
-
-
-
-
-
     </div>
     </div>
   )

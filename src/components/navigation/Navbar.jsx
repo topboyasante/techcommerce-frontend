@@ -65,8 +65,6 @@ function Navbar() {
          </div>
          <div className='flex items-center gap-3'>
           <CustomizedBadges/>
-        
-            
             <p>Cart</p>
          </div>
       </section>
