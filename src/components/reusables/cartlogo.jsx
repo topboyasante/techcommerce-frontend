@@ -2,8 +2,9 @@ import * as React from 'react';
 import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useSelector } from 'react-redux'
+import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -24,7 +25,7 @@ export default function CustomizedBadges() {
   return (
     <IconButton aria-label="cart">
       <StyledBadge badgeContent={quantity} color="secondary">
-        <ShoppingCartIcon />
+        <AiOutlineShoppingCart size={30} />
       </StyledBadge>
     </IconButton>
   );

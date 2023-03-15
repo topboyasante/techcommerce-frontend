@@ -14,7 +14,7 @@ const dispatch = useDispatch();
     }
   return (
     
-          <div className=" w-full  h-[300px] md:h-[350px] bg-[#f1f2f1] " >
+          <div className=" w-full  h-[300px] md:h-[350px] bg-[#f3f5f3] rounded-xl" >
         <CardContent>
           <div className="abosolute">
             <img src={`../images2/${img}`} className=" w-full h-[200px] md:h-[250px] object-cover rounded-[1em]" alt={name}/>
@@ -25,26 +25,15 @@ const dispatch = useDispatch();
   
 <div className=" pt-[1em] flex justify-between">
   <div>
-          <div className=" text-xl ite font-medium  uppercase tracking-widest">{name}</div>
-          < div className="">GHc {price}</div>
+          <div className=" lg:text-xl font-medium  uppercase tracking-widest">{name}</div>
+            <div className="">GHc {price}</div>
           </div>
-          
           <button onClick={addhandler}>
             <FaShoppingBag size={22}/>
-            
           </button>
-
-
-
           </div>
-        </CardContent>
-
+          </CardContent>
         <div>
-
-
-
-
-
     </div>
     </div>
   )
