@@ -42,6 +42,11 @@ const dispatch= useDispatch()
   
    }
 
+   
+  const delet = () => {
+    dispatch(cartActions.delete(id));
+  };
+
     
     const itemlist = useSelector((state)=> state.cart.Itemslist);
 
@@ -52,6 +57,8 @@ return item.id === id
     console.log(value)
 
 console.log(itemlist)
+
+const acquantity = value.length === 0 ? 0 :value[0].quantity
 
 
   return (
@@ -75,7 +82,7 @@ console.log(itemlist)
           <button>
         <BiPlus size={20} className='' onClick={additem}/> 
         </button>
-          <p className='text-2xl'>{value[0].quantity}</p>
+          <p className='text-2xl'>{acquantity}</p>
           <button>
           <BiMinus size={20} className=''/>
           </button>
