@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 import CardContent from "@mui/material/CardContent";
 import { FaShoppingBag} from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '@/reduc/Cart';
-import {Link} from 'next/link'
+
 
 
 export default function ItemComponent({name,img,price,id}) {
@@ -26,8 +27,9 @@ const dispatch = useDispatch();
   
 <div className=" pt-[1em] flex justify-between">
   <div>
-  
+  <Link href={`/${id}`}>
           <div className=" lg:text-xl font-medium  uppercase tracking-widest">{name}</div>
+          </Link>
             <div className="">GHc {price}</div>
           </div>
           <button onClick={addhandler}>
