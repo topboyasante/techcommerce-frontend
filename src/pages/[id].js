@@ -11,16 +11,20 @@ export default function DynamicR() {
    const itemid= router.query.id
 
    console.log(data[itemid])
+
+   typeof(itemid)
  
 
 
    let prop= data[itemid]
 
-   const id= itemid;
+   const id=  parseInt(itemid);
    const name= prop.name;
    const price = prop.price;
 
-   console.log(itemid);
+   console.log(id);
+
+   console.log(itemid)
 
    let [count,setcount]= useState(0);
 
@@ -34,11 +38,20 @@ const dispatch= useDispatch()
       id,name,price
       
     }))
-    setcount(count++)
+   
   
    }
 
+    
+    const itemlist = useSelector((state)=> state.cart.Itemslist);
 
+    const value= itemlist.filter((item)=>{
+return item.id === id
+    });
+
+    console.log(value)
+
+console.log(itemlist)
 
 
   return (
@@ -62,7 +75,7 @@ const dispatch= useDispatch()
           <button>
         <BiPlus size={20} className='' onClick={additem}/> 
         </button>
-          <p className='text-2xl'>{count}</p>
+          <p className='text-2xl'>{value[0].quantity}</p>
           <button>
           <BiMinus size={20} className=''/>
           </button>
