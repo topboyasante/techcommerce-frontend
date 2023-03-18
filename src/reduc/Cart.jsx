@@ -48,9 +48,9 @@ reducers:{
             
         const id= action.payload;
         //finding the item with id === id
-        const existingitem = state.Itemslist.find((item)=> id === item.id);
+        const existingitem = state. Itemslist.find((item)=> id === item.id);
         //clearing item from cart if quantity === 1
-        if(existingitem.quantity=== 1){
+        if(existingitem.quantity === 1){
             state.Itemslist = state.Itemslist.filter((item)=> item.id !== id);
             state.TotalQuantity--
         }
