@@ -37,15 +37,15 @@ export default function SimpleSnackbar() {
 
   return (
     <div>
-      <Button onClick={handleClick}>Item Added to cart</Button>
+  
       <Snackbar
         open={open}
         autoHideDuration={6000}
         onClose={handleClose}
-        message="Note archived"
+        message=" Item Added to cart"
         action={action}
       />
-      Item Added to cart
+     
     </div>
   );
 }
