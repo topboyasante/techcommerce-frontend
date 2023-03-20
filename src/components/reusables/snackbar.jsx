@@ -45,6 +45,7 @@ export default function SimpleSnackbar() {
         message="Note archived"
         action={action}
       />
+      Item Added to cart
     </div>
   );
 }
