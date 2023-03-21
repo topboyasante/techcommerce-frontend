@@ -4,7 +4,7 @@ export default
      [
         {
           name: "MacBook Pro",
-          description: "This is the first object",
+          description: "This is the first objectjjkkkkkkkkkkkkkkkkkkkk bhjbjhbhbbbbbbbbbbbbbbbbbbbbyvyyvb hvhhjvhvv",
           price: 2200,
           img:'macbookpro.jpg'
         },
