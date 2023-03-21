@@ -66,7 +66,7 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity
 
   return (
     <div className='w-full h-full lg:h-screen flex flex-col justify-center items-center lg:px-[4em] '>
-    <div className='bord pt-[16em] px-5 w-full flex flex-col lg:flex-row gap-4 pb-[1em] lg:py-[5em] lg:pt-[8em] h-full xl:pt-[10em xl:px-[6em]   '>
+    <div className='bord pt-[17em] px-5 w-full flex flex-col lg:flex-row gap-4 pb-[1em] lg:py-[5em] lg:pt-[8em] min-h-full xl:pt-[10em xl:px-[6em]   '>
   
     <div className=' bord  lg:w-[50vw] h-full'>
       <img src={`../images2/${prop.img}`} className='box w-full h-full object-cover'/>
