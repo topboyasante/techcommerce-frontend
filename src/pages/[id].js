@@ -65,15 +65,16 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity
 
 
   return (
-    <div className='pt-[16em] px-5 w-full flex flex-col gap-4 md:px-[2em] md:pt-[17em] '>
-
-    <div className=' mb-5'>
-      <img src={`../images2/${prop.img}`} className='box w-full'/>
+    <div className='w-full h-full lg:h-screen flex flex-col justify-center items-center lg:px-[4em] '>
+    <div className='bord pt-[16em] px-5 w-full flex flex-col lg:flex-row gap-4 pb-[1em] lg:py-[5em] lg:pt-[8em] h-full xl:pt-[10em xl:px-[6em]   '>
+  
+    <div className=' bord  lg:w-[50vw] h-full'>
+      <img src={`../images2/${prop.img}`} className='box w-full h-full object-cover'/>
       </div>
 
-      <div className=' flex flex-col gap-2 mb-[1em] h-full md:min-h-[30vh]'>
+      <div className=' flex flex-col gap-2 h-full'>
 
-<div  className=' flex flex-col gap-[2em] w-full h-full'>
+<div  className=' flex flex-col gap-3 w-full h-full'>
       <div className=' text-3xl font-bold'>{prop.name}</div>
 
       <div>{prop.description}</div>
@@ -128,6 +129,7 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity
 
         </section>
         </div>
+    </div>
     </div>
   )
 }
