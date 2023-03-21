@@ -65,15 +65,15 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity
 
 
   return (
-    <div className='pt-[16em] px-5 w-full flex flex-col gap-4 pb-[1em]'>
-  
+    <div className='pt-[16em] px-5 w-full flex flex-col gap-4 md:px-[2em] md:pt-[17em] '>
+
     <div className=' mb-5'>
       <img src={`../images2/${prop.img}`} className='box w-full'/>
       </div>
 
-      <div className=' flex flex-col gap-2'>
+      <div className=' flex flex-col gap-2 mb-[1em] h-full md:min-h-[30vh]'>
 
-<div  className=' flex flex-col gap-3 w-full h-full'>
+<div  className=' flex flex-col gap-[2em] w-full h-full'>
       <div className=' text-3xl font-bold'>{prop.name}</div>
 
       <div>{prop.description}</div>
