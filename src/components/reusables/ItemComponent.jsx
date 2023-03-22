@@ -27,7 +27,7 @@ const dispatch = useDispatch();
   
 <div className=" pt-[1em] flex justify-between">
   <div>
-  <Link href={`/${id}`}>
+  <Link href={`/products/${id}`}>
           <div className=" lg:text-xl font-medium  uppercase tracking-widest">{name}</div>
           </Link>
             <div className="">GHc {price}</div>

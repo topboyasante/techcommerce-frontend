@@ -5,6 +5,7 @@ import SearchBar from '../reusables/SearchBar'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BsCart2} from 'react-icons/bs'
 import CustomizedBadges from '../reusables/cartlogo'
+import { useRouter } from 'next/router'
 
 
 function Navbar() {
@@ -29,8 +30,11 @@ function Navbar() {
     },
   ]
 
+const router = useRouter()
+const gotocart=()=>{
+  router.push('/cartpage')
 
-
+}
 
 
   
@@ -63,10 +67,12 @@ function Navbar() {
             <AiOutlineUser size={30}/>
             <p>Account</p>
          </div>
-         <div className='flex items-center gap-3'>
+
+         <div className='flex items-center gap-3 ' onClick={gotocart}>
           <CustomizedBadges/>
             <p>Cart</p>
          </div>
+   
       </section>
     </nav>
   )

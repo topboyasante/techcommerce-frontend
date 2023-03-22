@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
-import data from '../components/page-sections/dummy.js'
+import data from '../../dummydata/dummy.js'
 import { useDispatch, useSelector } from 'react-redux'
 import {BiMinus,BiPlus} from 'react-icons/bi'
 import { cartActions } from '@/reduc/Cart.jsx'
@@ -27,9 +27,10 @@ export default function DynamicR() {
    let prop= data[itemid]
 
    const id=  parseInt(itemid);
-   const name= prop.name;
-   const price = prop.price;
-   const star = prop.star;
+   const name= prop && prop.name;
+   const price = prop && prop.price;
+   const star = prop && prop.star;
+   const img= prop && prop.img;
 
    console.log(id);
 
@@ -83,13 +84,13 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity;
       <div className=' w-full min-h-[70vh] md:min-h-[75vh] lg:mt-[4em]  mt-[15em] md:mt-[16em] flex flex-col gap-6 xl:min-h-[55vh] xl:flex xl:justify-center xl:items-center  lg:flex-row'>
 
       <div className=' bord w-full  lg:w-[50vw] '>
-      <img src={`../images2/${prop.img}`} className='box w-full h-full object-contain lg:object-cover'/>
+      <img src={`../images2/${img}`} className='box w-full h-full object-contain lg:object-cover'/>
       </div>
 
-      <div className=' w-full h-full lg:w-[50vw] lg:p-3 lg:flex lg:flex-col lg:justify-between bord lg:h-full'>
+      <div className=' w-full h-full lg:w-[50vw] lg:p-3 lg:flex lg:flex-col lg:justify-between  lg:h-full'>
         <div>
-          <p className=' text-3xl font-bold'>{prop.name}</p>
-          <p className=''>{prop.description}</p>
+          <p className=' text-3xl font-bold'>{name}</p>
+          <p className=''>{prop && prop.description}</p>
 
         
      <div className=' pt-[1em]'>
