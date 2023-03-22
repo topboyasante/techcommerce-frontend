@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {BiMinus,BiPlus} from 'react-icons/bi'
 import { cartActions } from '@/reduc/Cart.jsx'
 import {FaTruck} from 'react-icons/fa';
-import {FaStar} from 'react-icons/fa'
+import {FaStar,FaBoxOpen} from 'react-icons/fa'
 
 const Stars = ({ count }) => {
   const stars = Array.from({ length: count }, (_, index) => (
@@ -79,14 +79,14 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity;
 
 
   return (
-    <div className='w-full h-full p-5 bord flex justify-center items-center'>
-      <div className='w-full h-[100vh]  mt-[15em] flex flex-col gap-6'>
+    <div className='w-full h-full lg:h-screen p-5  flex justify-center items-center md:p-[3em] '>
+      <div className=' w-full min-h-[70vh] md:min-h-[75vh] lg:mt-[4em]  mt-[15em] md:mt-[16em] flex flex-col gap-6 xl:min-h-[55vh] xl:flex xl:justify-center xl:items-center  lg:flex-row'>
 
-      <div className=' bord w-full  lg:w-[50vw] h-[]'>
-      <img src={`../images2/${prop.img}`} className='box w-full h-full object-contain'/>
+      <div className=' bord w-full  lg:w-[50vw] '>
+      <img src={`../images2/${prop.img}`} className='box w-full h-full object-contain lg:object-cover'/>
       </div>
 
-      <div className=' w-full h-full'>
+      <div className=' w-full h-full lg:w-[50vw] lg:p-3 lg:flex lg:flex-col lg:justify-between bord lg:h-full'>
         <div>
           <p className=' text-3xl font-bold'>{prop.name}</p>
           <p className=''>{prop.description}</p>
@@ -107,9 +107,51 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity;
         <div className=' w-full border-b border-black my-2 lg:my-1'></div>
 
 
-        <div>
+        <div className='w-full h-full flex flex-col gap-5 md:gap-8 lg:gap-10 '>
           <p className='flex gap-2 text-2xl font-semibold'>GHc<span>{price}.00</span></p>
+
+          <div className='flex gap-3'> 
+        <div className=' w-[8em] h-12 rounded-[2em]  flex justify-center items-center gap-4 bg-[#e7e6e6]' >
+          <button>
+        <BiPlus size={20} className='' onClick={additem}/> 
+        </button>
+          <p className='text-2xl font-bold'>{acquantity}</p>
+          <button>
+          <BiMinus size={20} className='' onClick={deleteitem}/>
+          </button>
+
+        </div>
+
           </div>
+
+
+          <section className=' pt-[1em] flex flex-col gap-3 md:flex-row' >
+          <div className='boxer flex gap-4 p-2 md:w-[50%]'>
+
+            <FaTruck size={30} className=' text-[goldenrod]' />
+
+            <div>
+              <p className='text-2xl font-bold'>Free Delivery</p>
+             <p className=' underline text-sm'> Enter your Postal code for Delivery Availability</p>
+            </div>
+
+
+          </div>
+
+
+            <div className='boxer flex gap-4 p-2 md:w-[50%]'>
+
+            <FaBoxOpen size={30} className=' text-[goldenrod]' />
+
+            <div>
+              <p className='text-2xl font-bold'>Return Delivery</p>
+             <p className='  text-sm'> Free 30days Delivery Returns. <span  className=' underline'>Details</span> </p>
+            </div>
+
+
+          </div>
+
+        </section>
 
 
       </div>
@@ -117,6 +159,7 @@ const acquantity = value.length === 0 ? 0 :value[0].quantity;
 
       </div>
 
+    </div>
     </div>
   )
 }
