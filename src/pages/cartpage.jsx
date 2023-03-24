@@ -21,10 +21,10 @@ export default function Cartpage() {
 
     const auth = cartList === 0
   return (
-    <div className='w-full h-full flex  justify-center items-center p-5'>
+    <div className='w-full h-full flex  justify-center items-center '>
       
-      <div className=' w-full min-h-[70vh] mt-[16em] '> 
-      <div className='w-full flex flex-col '>
+      <div className='bord w-full min-h-[70vh] mt-[16em]  '> 
+      <div className='w-full flex flex-col gap-2 px-5'>
      <p className='text-3xl font-semibold'> Your Cart</p>
 
 
@@ -46,7 +46,12 @@ export default function Cartpage() {
                 
 
     </div>
-    <div className=' w-full h-full  flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2 text-white'>
+
+    
+    
+   </div>
+</div>
+<div className=' w-full min-h-[35vh]  flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2 text-white'>
       <div className='w-full flex items-center justify-between'>
       
         <p className=' text-lg'>Subtotal</p>
@@ -73,35 +78,24 @@ export default function Cartpage() {
       <p className=' text-lg'>Ghc {finaltotal}.00</p>
 
     </div>
-{!renderingCheck &&
-  (    <button onClick={()=>{
-    add(finaltotal, cartList)
-    move('/thanks')
-
-    }} className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#ccff01] hover:bg-[white] '>
-      Check Out
-
-</button>)
-}
-
 {
-  renderingCheck &&
-  (    <button onClick={()=>{
+  (    <button 
+  
 
-    move('/thanks')}} className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#ccff01] hover:bg-[white] '>
+    className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#ccff01] hover:bg-[white] '>
       Check Out
 
 </button>)
 }
+
+
  
 
 
     </div>
-      
-      </div>
 
-</div>
-</div>
+
+    </div>
     </div>
   )
 }
