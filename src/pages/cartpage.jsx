@@ -23,8 +23,8 @@ export default function Cartpage() {
   return (
     <div className='w-full h-full flex  justify-center items-center '>
       
-      <div className='bord w-full min-h-[70vh] mt-[16em]  '> 
-      <div className='w-full flex flex-col gap-2 px-5'>
+      <div className=' w-full min-h-[70vh] mt-[16em]  '> 
+      <div className='w-full flex flex-col gap-2 px-5 pb-3'>
      <p className='text-3xl font-semibold'> Your Cart</p>
 
 
