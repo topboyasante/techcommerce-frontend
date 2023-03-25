@@ -1,15 +1,21 @@
 import React from 'react'
 import { Button } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux'
+import Link from 'next/link';
 
 export default function Receipt() {
     const cartList= useSelector((state)=> state.cart.Itemslist);
     const dispatch = useDispatch();
 
+    let total = 0
+    cartList.forEach((item)=>{
+      total += item.totalprice
+      
+      })
   return (
-    <div className=' p-3 flex flex-col items-center w-full h-screen justify-between gap-3'>
+    <div className=' p-3 flex flex-col items-center w-full h-screen justify-between gap-3 pt-[17em]'>
     <div className=' p-3 flex flex-col items-center'>
-    <p className=' text-3xl font-[Oswald]'>Your Order has been placed</p>
+    <p className=' text-2xl '>Your Order has been placed</p>
     <p className='text-lg pb-[1em]'>Thank You!</p>
 
     <div className='w-full border p-2 md:w-[60%] lg:w-[50%]  '>
@@ -55,9 +61,11 @@ return (<tbody>
     </div>
 
     <div className='pb-2'>
-        <Button onClick={ Finalr} variant='contained'>
+        <Link href='/Receipt'>
+        <Button  variant='contained'>
             Back to Shop
         </Button>
+        </Link>
     </div>
 
 
