@@ -11,9 +11,13 @@ export default function Cartpage() {
 
     });
 
-    const total= 12;
-    const delivery= 23;
-    const finaltotal = 100
+    let total= 0;
+    
+    cartList.forEach((item)=>{
+      total += item.totalprice
+    })
+    const delivery= 20;
+    const finaltotal = total + delivery;
 
     
     //        <img src={empty} className=' h-[150px]' alt='empty cart'/>
@@ -29,7 +33,7 @@ export default function Cartpage() {
 
 
      <div className=' w-full h-full   rounded-t-[2rem] flex flex-col lg:w-[60vw] '>
-        <div className=' bg-[#f0f0f0] w-full h-[340px] md:h-[500px]  lg:max-h-[20rem] md:h-42 px-6 py-10 flex flex-col gap-3 overflow-y-scroll no-scrollbar'>
+        <div className=' bg-[#f0f0f0] w-full h-[340px] md:h-[500px]  lg:max-h-[20rem] xl:max-h-[30rem] md:h-42 px-6 py-10 flex flex-col gap-3 overflow-y-scroll no-scrollbar'>
         {!auth && <>  
        {data}
        </> }
