@@ -21,15 +21,15 @@ export default function Cartpage() {
 
     const auth = cartList === 0
   return (
-    <div className='w-full h-full flex  justify-center items-center '>
+    <div className='  w-full h-full flex lg:h-screen justify-center items-center '>
       
-      <div className=' w-full min-h-[70vh] mt-[16em]  '> 
-      <div className='w-full flex flex-col gap-2 px-5 pb-3'>
+      <div className=' w-full min-h-[70vh] mt-[16em] lg:mt-[5em] lg:flex lg:gap-0 lg:px-[7em]   '> 
+      <div className='w-full flex flex-col gap-2 px-5 lg:px-0 pb-3 lg:pb-0'>
      <p className='text-3xl font-semibold'> Your Cart</p>
 
 
-     <div className=' w-full h-full   rounded-t-[2rem] flex flex-col'>
-        <div className=' bg-[#f0f0f0] w-full h-[340px] md:h-[500px] lg:h-[300px] md:h-42 px-6 py-10 flex flex-col gap-3 overflow-y-scroll no-scrollbar'>
+     <div className=' w-full h-full   rounded-t-[2rem] flex flex-col lg:w-[60vw] '>
+        <div className=' bg-[#f0f0f0] w-full h-[340px] md:h-[500px]  lg:max-h-[20rem] md:h-42 px-6 py-10 flex flex-col gap-3 overflow-y-scroll no-scrollbar'>
         {!auth && <>  
        {data}
        </> }
@@ -51,8 +51,8 @@ export default function Cartpage() {
     
    </div>
 </div>
-<div className=' w-full min-h-[35vh] md:min-h-[43vh] flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2 text-white'>
-      <div className='w-full flex items-center justify-between'>
+<div className=' w-full lg:min-w-[20vw]   lg:rounded-[0] lg:my-[2.4em]   min-h-[35vh] md:min-h-[43vh] flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8  py-2 text-white'>
+      <div className='w-full lg:w-full  flex items-center justify-between'>
       
         <p className=' text-lg'>Subtotal</p>
         <p className=' text-lg'>Ghc {total}.00</p>
@@ -82,7 +82,7 @@ export default function Cartpage() {
   (    <button 
   
 
-    className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#ccff01] hover:bg-[white] '>
+    className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#16a34a] hover:bg-[white] '>
       Check Out
 
 </button>)
