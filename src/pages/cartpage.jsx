@@ -51,7 +51,7 @@ export default function Cartpage() {
     
    </div>
 </div>
-<div className=' w-full min-h-[35vh]  flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2 text-white'>
+<div className=' w-full min-h-[35vh] md:min-h-[43vh] flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2 text-white'>
       <div className='w-full flex items-center justify-between'>
       
         <p className=' text-lg'>Subtotal</p>
