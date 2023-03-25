@@ -1,4 +1,5 @@
 import Cartcomponent from '@/components/reusables/cartcomponent';
+import BasicModal from '@/components/reusables/modal';
 import React from 'react'
 import { FaArrowLeft } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
@@ -83,13 +84,9 @@ export default function Cartpage() {
 
     </div>
 {
-  (    <button 
-  
-
-    className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#16a34a] hover:bg-[white] '>
-      Check Out
-
-</button>)
+  <div className='w-full h-full '>
+<BasicModal/>
+</div>
 }
 
 
