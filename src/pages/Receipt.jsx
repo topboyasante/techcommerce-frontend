@@ -13,10 +13,10 @@ export default function Receipt() {
       
       })
   return (
-    <div className=' p-3 flex flex-col items-center w-full h-screen justify-between gap-3 pt-[17em]'>
+    <div className=' p-3 flex flex-col items-center w-full h-screen justify-between gap-3 pt-[17em] lg:pt-[7em]'>
     <div className=' p-3 flex flex-col items-center'>
-    <p className=' text-2xl '>Your Order has been placed</p>
-    <p className='text-lg pb-[1em]'>Thank You!</p>
+
+    <p className='text-2xl font-semibold pb-[1em]'>Your Receipt</p>
 
     <div className='w-full border p-2 md:w-[60%] lg:w-[50%]  '>
         <p className='text-center text-xl font-semibold md:text-2xl'>Receipt</p>
@@ -48,7 +48,7 @@ return (<tbody>
 <div className=' w-full p-3 border-b border-black my-2 lg:my-1'></div>
 <div className='w-full flex justify-between font-[Oswald]'>
 <p>Total</p>
-<p className='text-lg font-semibold'>Ghc{total}</p>
+<p className='text-lg font-semibold'>Ghc{total + 20}</p>
 </div>
 
 
@@ -61,10 +61,9 @@ return (<tbody>
     </div>
 
     <div className='pb-2'>
-        <Link href='/Receipt'>
-        <Button  variant='contained'>
-            Back to Shop
-        </Button>
+        <Link href='/Receipt' >
+          <p className=' underline md:text-4xl cursor-pointer lg:text-3xl'>Home</p>
+  
         </Link>
     </div>
 
