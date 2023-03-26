@@ -2,7 +2,7 @@ import Cartcomponent from '@/components/reusables/cartcomponent';
 import BasicModal from '@/components/reusables/modal';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-const empty = '/images2/emptyio.svg'
+const empty =  '/images2/cart.png'
 
 
 export default function Cartpage() {
@@ -44,7 +44,7 @@ export default function Cartpage() {
        {
         auth && (
             <div className=' flex flex-col items-center justify-evenly w-full h-full'>
-               <img src={empty} className=' h-[150px] w-[200px]' alt='empty cart'/>
+               <img src={empty} className=' h-[150px]' alt='empty cart'/>
              
         <p className='text-black text-xl'>Empty Cart</p>
         </div>
@@ -60,7 +60,8 @@ export default function Cartpage() {
     
    </div>
 </div>
-<div className=' w-full lg:min-w-[25vw]   lg:rounded-[0] lg:mt-[2.5em]   min-h-[35vh] md:min-h-[43vh] flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8  py-2 text-white'>
+<div className='h-full'>
+<div className=' w-full lg:min-w-[25vw] lg:min-h-[55vh]  lg:px-4 xl:min-h-[70vh] xl:px-5  lg:rounded-[0] lg:mt-[2.5em]   min-h-[35vh] md:min-h-[43vh] flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8  py-2 text-white'>
       <div className='w-full lg:w-full  flex items-center justify-between'>
       
         <p className=' text-lg'>Subtotal</p>
@@ -95,6 +96,7 @@ export default function Cartpage() {
  
 
 
+    </div>
     </div>
 
 
