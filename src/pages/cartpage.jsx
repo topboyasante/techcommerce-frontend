@@ -1,8 +1,9 @@
 import Cartcomponent from '@/components/reusables/cartcomponent';
 import BasicModal from '@/components/reusables/modal';
 import React from 'react'
-import { FaArrowLeft } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
+const empty = '/images2/emptyio.svg'
+
 
 export default function Cartpage() {
 
@@ -12,37 +13,40 @@ export default function Cartpage() {
 
     });
 
-    let total= 0;
-    
-    cartList.forEach((item)=>{
-      total += item.totalprice
-    })
-    const delivery= 20;
-    const finaltotal = total + delivery;
+
+
+  let total= 0;
+  
+  cartList.forEach((item)=>{
+    total += item.totalprice
+  })
+  const delivery= 20;
+  const finaltotal = total + delivery
 
     
     //        <img src={empty} className=' h-[150px]' alt='empty cart'/>
     
 
-    const auth = cartList === 0
+    const auth = cartList.length === 0;
   return (
     <div className='  w-full h-full flex lg:h-screen justify-center items-center '>
       
-      <div className=' w-full min-h-[70vh] mt-[16em] lg:mt-[5em] lg:flex lg:gap-0 lg:px-[7em]   '> 
+      <div className=' w-full min-h-[70vh] mt-[16em] lg:mt-[2em] lg:flex lg:gap-0 lg:px-[5em]   '> 
       <div className='w-full flex flex-col gap-2 px-5 lg:px-0 pb-3 lg:pb-0'>
      <p className='text-3xl font-semibold'> Your Cart</p>
 
 
-     <div className=' w-full h-full   rounded-t-[2rem] flex flex-col lg:w-[60vw] '>
-        <div className=' bg-[#f0f0f0] w-full h-[340px] md:h-[500px]  lg:max-h-[20rem] xl:max-h-[30rem] md:h-42 px-6 py-10 flex flex-col gap-3 overflow-y-scroll no-scrollbar'>
+     <div className=' w-full h-full   rounded-t-[2rem] flex flex-col lg:w-[55vw] xl:w-[60vw] '>
+        <div className=' bg-[#f0f0f0] w-full h-[340px] md:h-[500px]  lg:max-h-[20rem] xl:min-h-full md:h-42 px-6 py-10 flex flex-col gap-3 overflow-y-scroll no-scrollbar'>
         {!auth && <>  
        {data}
        </> }
        {
         auth && (
             <div className=' flex flex-col items-center justify-evenly w-full h-full'>
-
-        <p className='text-white text-xl'>Empty Cart</p>
+               <img src={empty} className=' h-[150px] w-[200px]' alt='empty cart'/>
+             
+        <p className='text-black text-xl'>Empty Cart</p>
         </div>
         )
        }
@@ -56,7 +60,7 @@ export default function Cartpage() {
     
    </div>
 </div>
-<div className=' w-full lg:min-w-[20vw]   lg:rounded-[0] lg:my-[2.4em]   min-h-[35vh] md:min-h-[43vh] flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8  py-2 text-white'>
+<div className=' w-full lg:min-w-[25vw]   lg:rounded-[0] lg:mt-[2.5em]   min-h-[35vh] md:min-h-[43vh] flex-1 bg-[#353535] rounded-t-[2rem] flex flex-col items-center justify-evenly px-8  py-2 text-white'>
       <div className='w-full lg:w-full  flex items-center justify-between'>
       
         <p className=' text-lg'>Subtotal</p>
@@ -83,11 +87,9 @@ export default function Cartpage() {
       <p className=' text-lg'>Ghc {finaltotal}.00</p>
 
     </div>
-{
-  <div className='w-full h-full '>
-<BasicModal/>
+<div className='w-full h-full'>
+  <BasicModal/>
 </div>
-}
 
 
  
