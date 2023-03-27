@@ -15,6 +15,8 @@
     "@mui/material": "^5.11.12",
     "@next/font": "13.1.6",
     "@reduxjs/toolkit": "^1.9.3",
+    "aos": "^2.3.4",
+    "framer-motion": "^10.9.1",
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
