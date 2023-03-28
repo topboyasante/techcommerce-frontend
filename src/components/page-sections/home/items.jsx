@@ -1,9 +1,6 @@
 import ItemComponent from '@/components/reusables/ItemComponent.jsx'
-
-
-
-
-import React from 'react'
+import { motion,AnimatePresence } from "framer-motion";
+import React, { useState } from "react";
 import data from '../../../dummydata/dummy.js'
 
 export default function Items() {

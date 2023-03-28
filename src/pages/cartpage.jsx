@@ -2,7 +2,7 @@ import Cartcomponent from '@/components/reusables/cartcomponent';
 import BasicModal from '@/components/reusables/modal';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-const empty =  '/images2/cart.png'
+const empty =  '/images2/emptyio.svg'
 
 
 export default function Cartpage() {
