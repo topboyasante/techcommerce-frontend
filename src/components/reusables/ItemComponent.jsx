@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import { FaShoppingBag} from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '@/reduc/Cart';
+import { motion } from "framer-motion";
 
 
 
@@ -32,9 +33,15 @@ const dispatch = useDispatch();
           </Link>
             <div className="">GHc {price}</div>
           </div>
+          <motion.div
+     
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+    >
           <button onClick={addhandler}>
             <FaShoppingBag size={22}/>
           </button>
+          </motion.div>
           </div>
           </CardContent>
         <div>

@@ -39,7 +39,7 @@ const gotocart=()=>{
 
   
   return (
-    <nav className='shadow p-5 fixed  w-full gap-3 lg:gap-0 lg:h-[10vh] bg-white flex flex-col lg:flex-row justify-center lg:justify-between items-center border'>
+    <nav className='shadow p-5 fixed  w-full gap-3 lg:gap-0 lg:h-[10vh] bg-white flex flex-col lg:flex-row justify-center lg:justify-between items-center border z-[9999]'>
       {/* Logo */}
       <section className='lg:w-[20%]'>
       <Link href="/">
