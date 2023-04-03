@@ -24,7 +24,7 @@ export default function BasicModal() {
 
   return (
     <div  >
-      <Button onClick={handleOpen} className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#16a34a] hover:bg-[white]  ' >  Check Out</Button>
+      <button onClick={handleOpen} className= ' font-bold w-full h-[50px] lg:h-[35px] text-[black] rounded-[30px] bg-[#16a34a] hover:bg-[white]  ' >  Check Out</button>
       <Modal
         open={open}
         onClose={handleClose}

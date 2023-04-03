@@ -28,6 +28,7 @@ export default function Cartcomponent({id,name,price,quantity,img}) {
              Ghc {price}
          </p>
          </div>
+         <>
          <div className='group flex items-center gap-2 ml-auto cursor-pointer'>
              <button className=' border ' onClick={addButton}>
     
@@ -39,6 +40,7 @@ export default function Cartcomponent({id,name,price,quantity,img}) {
                  <BiMinus size={20} className=' text-black'/>
              </button>
          </div>
+         </>
          </div>
     
         
